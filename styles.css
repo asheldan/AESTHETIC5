@@ -1,0 +1,87 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+.mascot {
+    width: 30%;
+    animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+.glow {
+    font-size: 3em;
+    color: #fff;
+    text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { text-shadow: 0 0 20px #ff0, 0 0 30px #ff0, 0 0 40px #ff0; }
+    50% { text-shadow: 0 0 40px #ff0, 0 0 60px #ff0, 0 0 80px #ff0; }
+}
+
+.glow:hover {
+    animation: none;
+    text-shadow: 0 0 50px #ff0, 0 0 70px #ff0, 0 0 100px #ff0;
+}
+
+.gifs img {
+    width: 20%;
+    display: inline-block;
+    margin: 0 5px;
+    animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.text-animation {
+    background: #000;
+    color: #fff;
+    font-size: 2em;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.scroll-text {
+    display: inline-block;
+    padding-left: 100%;
+    animation: scroll-text 10s linear infinite;
+}
+
+@keyframes scroll-text {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+}
+
+.twitter-btn {
+    background: #1DA1F2;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+}
